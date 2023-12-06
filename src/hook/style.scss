@@ -1,0 +1,48 @@
+:root {
+  --main-body-bg-color: rgb(245, 245, 245);
+  --main-text-color: black;
+  --main-navbarCardSearchFilter-bg-color: white;
+}
+
+.dark {
+  --main-body-bg-color: #202c36;
+  --main-text-color: rgb(255, 255, 255);
+  --main-navbarCardSearchFilter-bg-color: #2b3844;
+}
+
+body {
+  color: var(--main-text-color);
+  background-color: var(--main-body-bg-color);
+  .homePage {
+    background-color: var(--main-body-bg-color);
+    .navbar {
+      background-color: var(--main-navbarCardSearchFilter-bg-color);
+    }
+    .container {
+      .inpFil {
+        .input,
+        .filter,
+        .select {
+          background-color: var(--main-navbarCardSearchFilter-bg-color);
+          input {
+            background-color: var(--main-navbarCardSearchFilter-bg-color);
+          }
+        }
+      }
+    }
+  }
+  .cards {
+    .card {
+      background-color: var(--main-navbarCardSearchFilter-bg-color);
+      color: var(--main-text-color);
+    }
+  }
+  .navbar {
+    background-color: var(--main-navbarCardSearchFilter-bg-color);
+  }
+  .back {
+    a {
+      color: var(--main-text-color);
+    }
+  }
+}
